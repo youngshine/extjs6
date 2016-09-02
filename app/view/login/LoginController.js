@@ -10,13 +10,13 @@ Ext.define('DemoApp.view.login.LoginController', {
         // Set the localStorage value to true
         localStorage.setItem("TutorialLoggedIn", true);
 
-        // Remove Login Window
-        this.getView().destroy();
+         // Remove Login Window
+         this.getView().destroy();
 
-        // Add the main view to the viewport
-        Ext.create({
+         // Add the main view to the viewport
+         Ext.create({
             xtype: 'app-main'
-        });
+         });
 
     }
 });

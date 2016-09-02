@@ -9,7 +9,7 @@ Ext.define('DemoApp.view.login.Login', {
     controller: 'login',
     bodyPadding: 10,
     title: 'Login Window',
-    closable: false,
+    closable: true,
     autoShow: true,
 
     items: {

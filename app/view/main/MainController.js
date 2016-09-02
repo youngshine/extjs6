@@ -141,6 +141,16 @@ Ext.define('DemoApp.view.main.MainController', {
         if (!window.location.hash) {
             this.redirectTo("dashboard");
         }
+
+        var login_data = localStorage.getItem("TutorialLoggedIn");
+
+        if ( !login_data) {
+            this.getView().destroy();
+
+            Ext.create({
+                xtype: 'login'
+            });
+        }
     },
 
     onRouteChange:function(id){
@@ -153,5 +163,17 @@ Ext.define('DemoApp.view.main.MainController', {
 
     onEmailRouteChange: function () {
         this.setCurrentView('email');
+    },
+
+    closeClick: function () {
+        localStorage.removeItem('TutorialLoggedIn');
+
+        this.redirectTo("");
+        this.getView().destroy();
+
+        Ext.create({
+            xtype: 'login'
+        });
+
     }
 });

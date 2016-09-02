@@ -8,7 +8,7 @@
 Ext.define('DemoApp.view.main.Main', {
     extend: 'Ext.container.Viewport',
 
-    xtype : 'app-main',
+    xtype: 'app-main',
 
     requires: [
         'Ext.list.Tree'
@@ -72,9 +72,11 @@ Ext.define('DemoApp.view.main.Main', {
                 },
                 {
                     iconCls:'x-fa fa-th-large',
-                    href: '#profile',
-                    hrefTarget: '_self',
-                    tooltip: 'See your profile'
+                    text: '退出',
+                    tooltip: 'close your pro',
+                    listeners: {
+                        click: 'closeClick'
+                    }
                 },
                 {
                     xtype: 'tbtext',

@@ -12,18 +12,18 @@ Ext.define('DemoApp.Application', {
         'NavigationTree'
     ],
 
-    //defaultToken : 'dashboard',
+    defaultToken : 'dashboard',
 
     
     launch: function () {
 
-       /* var loggedIn;
+        var loggedIn;
 
         loggedIn = localStorage.getItem("TutorialLoggedIn");
 
         Ext.create({
             xtype: loggedIn ? 'app-main' : 'login'
-        });*/
+        });
     },
 
     onAppUpdate: function () {
