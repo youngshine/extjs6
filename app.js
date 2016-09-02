@@ -16,8 +16,8 @@ Ext.application({
     // will gain a "viewport" plugin if it does not extend Ext.Viewport. With the
     // modern toolkit, the main view will be added to the Viewport.
     //
-    mainView: 'DemoApp.view.login.Login'
-    //mainView: 'DemoApp.view.main.Main'
+    //mainView: 'DemoApp.view.login.Login'
+    mainView: 'DemoApp.view.main.Main'
 
     //-------------------------------------------------------------------------
     // Most customizations should be made to DemoApp.Application. If you need to
